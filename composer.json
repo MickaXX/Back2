@@ -6,11 +6,19 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "bayareawebpro/nova-field-ckeditor": "^1.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.2",
+        "laravel/nova": "*",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./nova"
+        }
+    ],
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",

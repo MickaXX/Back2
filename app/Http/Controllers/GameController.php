@@ -14,7 +14,8 @@ class GameController extends Controller
      */
     public function index()
     {
-        //
+        $games = Game::all();
+        return $games;
     }
 
     /**
@@ -46,7 +47,7 @@ class GameController extends Controller
      */
     public function show(Game $game)
     {
-        //
+        return $game;
     }
 
     /**
