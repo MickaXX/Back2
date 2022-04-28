@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\GameController;
+use \App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +16,15 @@ use \App\Http\Controllers\GameController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::resource('games', GameController::class)->only([
+    'index',
+    'show'
+]);
+
+Route::resource('posts', PostController::class)->only([
     'index',
     'show'
 ]);

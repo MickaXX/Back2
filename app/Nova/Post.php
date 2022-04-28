@@ -31,6 +31,10 @@ class Post extends Resource
      */
     public static $search = [
         'id',
+        'title',
+        'slug',
+        'description',
+        'content',
     ];
 
     /**
@@ -44,6 +48,7 @@ class Post extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Title')->sortable(),
+            Text::make('Slug')->sortable(),
             CkEditor::make('Description')->hideFromIndex(),
             CkEditor::make('Content')->hideFromIndex(),
         ];
