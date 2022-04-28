@@ -5,7 +5,7 @@
 
     <!-- Banner -->
     <section class="youplay-banner banner-top big youplay-banner-parallax">
-      <div class="image" style="background-image: url({{ asset(''assets/images/banner-bg.jpg') }}">
+      <div class="image" style="background-image: url({{ asset('assets/images/banner-bg.jpg') }})">
       </div>
 
       <div class="info">
@@ -58,31 +58,31 @@
       <div class="youplay-carousel gallery-popup">
         <a class="angled-img" href="{{ asset('assets/images/game-brs-1-1920x1179.jpg') }}">
           <div class="img">
-            <img src="{{ asset('assets/images/game-brs-1-500x375.jpg') }})" alt="">
+            <img src="{{ asset('assets/images/game-brs-1-500x375.jpg') }}" alt="">
           </div>
           <i class="fa fa-search-plus icon"></i>
         </a>
-        <a class="angled-img" href="{{ asset('assets/images/game-brs-2-1920x1006.jpg') }})">
+        <a class="angled-img" href="{{ asset('assets/images/game-brs-2-1920x1006.jpg') }}">
           <div class="img">
-            <img src="{{ asset('assets/images/game-brs-2-500x375.jpg') }})" alt="">
+            <img src="{{ asset('assets/images/game-brs-2-500x375.jpg') }}" alt="">
           </div>
           <i class="fa fa-search-plus icon"></i>
         </a>
-        <a class="angled-img" href="{{ asset('assets/images/game-brs-3-1920x1080.jpg') }})">
+        <a class="angled-img" href="{{ asset('assets/images/game-brs-3-1920x1080.jpg') }}">
           <div class="img">
-            <img src="{{ asset('assets/images/game-brs-3-500x375.jpg') }})" alt="">
+            <img src="{{ asset('assets/images/game-brs-3-500x375.jpg') }}" alt="">
           </div>
           <i class="fa fa-search-plus icon"></i>
         </a>
-        <a class="angled-img" href="{{ asset('assets/images/game-brs-4-1920x1200.jpg') }})">
+        <a class="angled-img" href="{{ asset('assets/images/game-brs-4-1920x1200.jpg') }}">
           <div class="img">
-            <img src="{{ asset('assets/images/game-brs-4-500x375.jpg') }})" alt="">
+            <img src="{{ asset('assets/images/game-brs-4-500x375.jpg') }}" alt="">
           </div>
           <i class="fa fa-search-plus icon"></i>
         </a>
-        <a class="angled-img" href="{{ asset('assets/images/game-brs-5-1525x900.jpg') }})">
+        <a class="angled-img" href="{{ asset('assets/images/game-brs-5-1525x900.jpg') }}">
           <div class="img">
-            <img src="{{ asset('assets/images/game-brs-5-500x375.jpg') }})" alt="">
+            <img src="{{ asset('assets/images/game-brs-5-500x375.jpg') }}" alt="">
           </div>
           <i class="fa fa-search-plus icon"></i>
         </a>
@@ -110,7 +110,7 @@
 
       <!-- Testimonials -->
       <section class="youplay-banner youplay-banner-parallax mt-60" id="testimonials">
-        <div class="image" style="background-image: url('assets/images/game-brs-2-1920x1006.jpg');" data-speed="-0.2">
+        <div class="image" style="background-image: url({{ asset('assets/images/game-brs-2-1920x1006.jpg')}})" data-speed="-0.2">
         </div>
 
         <div class="info">
