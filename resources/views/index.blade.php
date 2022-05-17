@@ -55,7 +55,7 @@
 
       <!-- Screenshots -->
       <h2 class="container h1" id="screenshots">Игры</h2>
-      <div class="youplay-carousel gallery-popup">
+      <div class="youplay-carousel">
          @foreach($games as $game)
           <a class="angled-img" href="{{ route('games.show', [$game->slug]) }}">
             <div class="img">
