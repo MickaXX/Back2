@@ -57,12 +57,10 @@
       <h2 class="container h1" id="screenshots">Игры</h2>
       <div class="youplay-carousel gallery-popup">
          @foreach($games as $game)
-          <a class="angled-img" href="{{ asset('assets/images/game-brs-1-1920x1179.jpg') }}">
+          <a class="angled-img" href="{{ route('games.show', [$game->slug]) }}">
             <div class="img">
-              <span>{{$game->name}}</span>
-              <img src="{{ asset('assets/images/game-brs-1-500x375.jpg') }}" alt="">
+              <img src="{{ asset('storage/'.$game->poster) }}" alt="{{$game->name}}">
             </div>
-            <i class="fa fa-search-plus icon"></i>
           </a>
         @endforeach
       </div>
@@ -153,9 +151,6 @@
                 <div class="clearfix">
                   <h3 class="h2 pull-left m-0"><a href="blog-post.html">{{$post->title}}</a></h3>
                   <span class="date pull-right"><i class="fa fa-calendar"></i>{{$post->created_at}}</span>
-                </div>
-                <div class="tags">
-                  <i class="fa fa-tags"></i>  <a href="#">Black Rock Shooter II</a>, <a href="#">Beta</a>, <a href="#">Start Today</a>
                 </div>
                 <div class="description">
                   {!! $post->description !!}
